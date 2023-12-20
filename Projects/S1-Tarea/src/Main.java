@@ -17,7 +17,7 @@ public class Main {
         for (int b = 0; b < N; b++){
             int K= b;
             for(int c = b+1; c < N; c++){
-                if (Arr[c]<Arr[K]){
+                if (Arr[c]<Arr[K]){   // change the minor
                     K=c;
                 }
             }
