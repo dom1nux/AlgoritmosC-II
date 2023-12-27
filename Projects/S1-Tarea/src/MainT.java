@@ -1,8 +1,9 @@
 import java.util.Scanner;
+
 public class MainT {
     public static void main(String[] args) {
-        Scanner Ss= new Scanner(System.in);
-        Triangle t1 = new Triangle(0,0,0,0);
+        Scanner Ss = new Scanner(System.in);
+        Triangle t1 = new Triangle(0, 0, 0, 0);
         System.out.println("Ingresa el valor de la base:");
         t1.setB(Ss.nextInt());
         System.out.println("Ingresa el valor de la altura:");

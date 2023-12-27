@@ -6,26 +6,26 @@ public class Main {
 
         System.out.println("Ingrese el número de datos: ");
         int N = Ss.nextInt();
-        int [] Arr = new int[N];
+        int[] Arr = new int[N];
 
-        for (int a = 0; a < N; a++){
+        for (int a = 0; a < N; a++) {
             System.out.println("Ingrese un digito: ");
             int F = Ss.nextInt();
-            Arr[a]=F;
+            Arr[a] = F;
         }
 
-        for (int b = 0; b < N; b++){
-            int K= b;
-            for(int c = b+1; c < N; c++){
-                if (Arr[c]<Arr[K]){   // change the minor
-                    K=c;
+        for (int b = 0; b < N; b++) {
+            int K = b;
+            for (int c = b + 1; c < N; c++) {
+                if (Arr[c] < Arr[K]) {   // change the minor
+                    K = c;
                 }
             }
             int G = Arr[b];
             Arr[b] = Arr[K];
             Arr[K] = G;
         }
-        for (int d = 0; d < N; d++){
+        for (int d = 0; d < N; d++) {
             System.out.println(Arr[d]);
         }
 
