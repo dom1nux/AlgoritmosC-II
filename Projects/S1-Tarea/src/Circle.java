@@ -1,8 +1,8 @@
 public class Circle {
     final static double PI = 3.14159;
 
-    String name = "";
-    int radius = 0;
+    private String name = "";
+    private double radius = 0;
 
     public Circle(String name, int radius) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Circle {
         this.name = name;
     }
 
-    public int getRadius() {
+    public double getRadius() {
         return radius;
     }
 
@@ -29,7 +29,7 @@ public class Circle {
         return PI * Math.pow(radius, 2);
     }
 
-    public double circunference() {
+    public double circumference() {
         return 2 * PI * radius;
     }
 }

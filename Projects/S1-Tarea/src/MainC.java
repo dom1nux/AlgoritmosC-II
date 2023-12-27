@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class MainC {
     public static void main(String[] args) {
         Circle c1 = new Circle("", 0);
         Scanner scanner = new Scanner(System.in);
@@ -11,6 +11,6 @@ public class Main {
         c1.setRadius(scanner.nextInt());
         System.out.println();
         System.out.printf("Área: %.2f", c1.area());
-        System.out.printf("Circunferencia: %.2f", c1.circunference());
+        System.out.printf("Circunferencia: %.2f", c1.circumference());
     }
 }
