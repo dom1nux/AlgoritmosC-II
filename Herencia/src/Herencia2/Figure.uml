@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Herencia2.Figure</OriginalElement>
+  <nodes>
+    <node x="212.0" y="21.0">Herencia2.Main</node>
+    <node x="188.0" y="217.5">Herencia2.Circle</node>
+    <node x="-56.5" y="383.0">Herencia2.Triangle</node>
+    <node x="8.0" y="-14.0">Herencia2.Figure</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Herencia2.Triangle" target="Herencia2.Figure" relationship="GENERALIZATION">
+      <point x="0.0" y="-97.0" />
+      <point x="0.0" y="74.0" />
+    </edge>
+    <edge source="Herencia2.Circle" target="Herencia2.Figure" relationship="GENERALIZATION">
+      <point x="0.0" y="-62.5" />
+      <point x="275.0" y="180.0" />
+      <point x="95.0" y="180.0" />
+      <point x="0.0" y="74.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.8599672667757775" showDependencies="false" x="141.0802755785628" y="211.17147533495745" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
