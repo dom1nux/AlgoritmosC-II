@@ -3,26 +3,20 @@
   <ID>JAVA</ID>
   <OriginalElement>Entity.Entity</OriginalElement>
   <nodes>
-    <node x="148.5" y="-13.5">Interfaces.CombatEntity</node>
-    <node x="335.0" y="571.0">Enemy.Thief</node>
-    <node x="250.0" y="651.0">Enemy.Goblin</node>
-    <node x="-71.5" y="355.0">Entity.Player</node>
-    <node x="-81.5" y="638.0">Player.Swordman</node>
-    <node x="426.0" y="651.0">NonPlayer.Villager</node>
-    <node x="352.0" y="98.0">Interfaces.SharedBehavior</node>
-    <node x="148.5" y="355.0">Entity.Enemy</node>
     <node x="118.5" y="558.0">Player.Wizard</node>
-    <node x="-81.5" y="86.5">Entity.Entity</node>
+    <node x="-71.5" y="355.0">Entity.Player</node>
+    <node x="352.0" y="98.0">Interfaces.SharedBehavior</node>
     <node x="368.5" y="355.0">Entity.NonPlayer</node>
+    <node x="426.0" y="651.0">NonPlayer.Villager</node>
+    <node x="335.0" y="571.0">Enemy.Thief</node>
+    <node x="148.5" y="-13.5">Interfaces.CombatEntity</node>
+    <node x="148.5" y="355.0">Entity.Enemy</node>
+    <node x="-81.5" y="638.0">Player.Swordman</node>
+    <node x="-81.5" y="86.5">Entity.Entity</node>
+    <node x="250.0" y="651.0">Enemy.Goblin</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="Player.Wizard" target="Entity.Player" relationship="GENERALIZATION">
-      <point x="0.0" y="-27.0" />
-      <point x="200.0" y="525.0" />
-      <point x="20.0" y="525.0" />
-      <point x="0.0" y="50.0" />
-    </edge>
     <edge source="Entity.NonPlayer" target="Interfaces.CombatEntity" relationship="REALIZATION">
       <point x="45.75" y="-50.0" />
       <point x="505.75" y="325.0" />
@@ -30,6 +24,12 @@
       <point x="500.0" y="285.0" />
       <point x="240.0" y="285.0" />
       <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="Player.Wizard" target="Entity.Player" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="200.0" y="525.0" />
+      <point x="20.0" y="525.0" />
+      <point x="0.0" y="50.0" />
     </edge>
     <edge source="Entity.Player" target="Interfaces.SharedBehavior" relationship="REALIZATION">
       <point x="45.75" y="-50.0" />
@@ -109,17 +109,17 @@
       <point x="240.0" y="325.0" />
       <point x="0.0" y="38.5" />
     </edge>
-    <edge source="Entity.NonPlayer" target="Entity.Entity" relationship="GENERALIZATION">
-      <point x="-45.75" y="-50.0" />
-      <point x="414.25" y="305.0" />
-      <point x="-20.0" y="305.0" />
-      <point x="0.0" y="38.5" />
-    </edge>
     <edge source="NonPlayer.Villager" target="Entity.NonPlayer" relationship="GENERALIZATION">
       <point x="-27.0" y="-14.0" />
       <point x="453.0" y="625.0" />
       <point x="460.0" y="625.0" />
       <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="Entity.NonPlayer" target="Entity.Entity" relationship="GENERALIZATION">
+      <point x="-45.75" y="-50.0" />
+      <point x="414.25" y="305.0" />
+      <point x="-20.0" y="305.0" />
+      <point x="0.0" y="38.5" />
     </edge>
     <edge source="Enemy.Goblin" target="Entity.Enemy" relationship="GENERALIZATION">
       <point x="0.0" y="-14.0" />
@@ -128,7 +128,7 @@
       <point x="0.0" y="50.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="0.89366391184573" showDependencies="false" x="344.1165902435266" y="373.1316950524043" />
+  <settings layout="Hierarchic Compact" zoom="0.7237465564738292" showDependencies="false" x="395.40514616321525" y="408.70516138855055" />
   <SelectedNodes />
   <Categories>
     <Category>Methods</Category>

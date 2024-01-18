@@ -21,6 +21,6 @@ public class NonPlayer extends Entity implements SharedBehavior, CombatEntity {
 
     @Override
     public void move(int x, int y) {
-
+        System.out.printf("%s se mueve %d horizontalmente y %d verticalmente\n",getName() ,x, y);
     }
 }
