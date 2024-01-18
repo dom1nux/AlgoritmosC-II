@@ -11,7 +11,7 @@ public class Wizard extends Player {
     @Override
     public void attack(Entity target) {
         super.attack(target);
-        int damage = 4;
-        System.out.printf("%d de daño\n", damage);
+        int damage = 30;
+        System.out.printf(name + "hace %d de daño\n", damage);
     }
 }

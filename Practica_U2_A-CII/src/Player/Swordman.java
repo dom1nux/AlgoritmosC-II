@@ -12,7 +12,8 @@ public class Swordman extends Player {
     @Override
     public void attack(Entity target) {
         super.attack(target);
-        int damage = 5;
-        System.out.printf("%d de daño\n", damage);
+        int damage = 40;
+        System.out.printf(name + "hace %d de daño\n", damage);
+
     }
 }
