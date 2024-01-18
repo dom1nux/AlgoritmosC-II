@@ -27,6 +27,5 @@ public class Car extends Vehicle {
         System.out.printf("Marca: %s\n", brand);
         System.out.printf("Modelo: %s\n", model);
         System.out.printf("Color: %s\n", color);
-
     }
 }
