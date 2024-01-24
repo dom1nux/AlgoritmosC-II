@@ -12,6 +12,5 @@ public class Main {
         System.out.println();
         int[][] matrixOut = Matrix.matrixSum(matrixOne, matrixTwo);
         Matrix.matrixPrint(matrixOut);
-
     }
 }
