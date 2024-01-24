@@ -17,6 +17,12 @@ public class General_Main {
             case 2:
                 Case2();
                 break;
+            case 3:
+                Case3();
+                break;
+            case 4:
+                Case4();
+                break;
             default:
                 System.out.println("Error");
         }
@@ -28,6 +34,12 @@ public class General_Main {
     }
     private static void Case1() {
         Barajeador_cartas.Main_2();
+    }
+    private static void Case3() {
+        Multiplicacion_Matr.Main_3();
+    }
+    private static void Case4() {
+        Transpuesta.Main_4();
     }
 
 }
