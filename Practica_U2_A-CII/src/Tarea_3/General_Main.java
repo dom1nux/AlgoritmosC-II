@@ -6,8 +6,8 @@ public class General_Main {
         System.out.println("Con que problema quieres interactuar?");
         System.out.println("1. Barajeador de cartas");
         System.out.println("2. Suma");
-        // System.out.println("3. Multiplicación");
-        //System.out.println("4. Transpuesto");
+        System.out.println("3. Multiplicación");
+        System.out.println("4. Transpuesta");
         int Call = Ss.nextInt();
 
         switch (Call){
