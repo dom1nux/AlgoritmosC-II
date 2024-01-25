@@ -14,5 +14,4 @@ public class Goblin extends Enemy {
         int damage = 20;
         System.out.printf("El goblin hace %d de daño\n", damage);
     }
-
 }

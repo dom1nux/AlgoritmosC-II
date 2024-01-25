@@ -3,9 +3,8 @@ package Player;
 import Entity.Entity;
 import Entity.Player;
 
-public class Swordman extends Player {
-
-    public Swordman(String name, int health) {
+public class Swordsman extends Player {
+    public Swordsman(String name, int health) {
         super(name, health);
     }
 

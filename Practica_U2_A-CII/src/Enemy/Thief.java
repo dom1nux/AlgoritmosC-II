@@ -14,5 +14,4 @@ public class Thief extends Enemy {
         int damage = 25;
         System.out.printf("El ladron hace %d de daño\n", damage);
     }
-
 }

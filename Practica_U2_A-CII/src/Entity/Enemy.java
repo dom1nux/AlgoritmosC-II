@@ -1,6 +1,5 @@
 package Entity;
 
-
 import Interfaces.CombatEntity;
 import Interfaces.SharedBehavior;
 
@@ -10,17 +9,11 @@ public class Enemy extends Entity implements SharedBehavior, CombatEntity {
     }
 
     @Override
-    public void attack(Entity target) {
-
-    }
+    public void attack(Entity target) {}
 
     @Override
-    public void takeDamage(int damage) {
-
-    }
+    public void takeDamage(int damage) {}
 
     @Override
-    public void move(int x, int y) {
-
-    }
+    public void move(int x, int y) {}
 }
