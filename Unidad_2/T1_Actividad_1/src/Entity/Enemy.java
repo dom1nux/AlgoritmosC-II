@@ -1,7 +1,7 @@
-package Entity;
+package entity;
 
-import Interfaces.CombatEntity;
-import Interfaces.SharedBehavior;
+import interfaces.CombatEntity;
+import interfaces.SharedBehavior;
 
 public class Enemy extends Entity implements SharedBehavior, CombatEntity {
     public Enemy(String name, int health) {

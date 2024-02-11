@@ -1,7 +1,7 @@
-package Entity;
+package entity;
 
-import Interfaces.CombatEntity;
-import Interfaces.SharedBehavior;
+import interfaces.CombatEntity;
+import interfaces.SharedBehavior;
 
 public class Player extends Entity implements SharedBehavior, CombatEntity {
     public Player(String name, int health) {
@@ -24,6 +24,6 @@ public class Player extends Entity implements SharedBehavior, CombatEntity {
 
     @Override
     public void move(int x, int y) {
-        System.out.printf("%s se mueve %d horizontalmente y %d verticalmente\n",getName() ,x, y);
+        System.out.printf("%s se mueve %d en \"x\" y %d en \"y\"\n",getName() ,x, y);
     }
 }

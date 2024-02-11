@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 public class Entity {
     protected String name;

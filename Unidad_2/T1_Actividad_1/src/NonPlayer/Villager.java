@@ -1,6 +1,6 @@
-package NonPlayer;
+package nonplayer;
 
-import Entity.NonPlayer;
+import entity.NonPlayer;
 
 public class Villager extends NonPlayer {
     public Villager(String name, int health) {

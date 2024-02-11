@@ -1,6 +1,6 @@
-package Interfaces;
+package interfaces;
 
-import Entity.Entity;
+import entity.Entity;
 
 public interface CombatEntity {
     void attack(Entity target);

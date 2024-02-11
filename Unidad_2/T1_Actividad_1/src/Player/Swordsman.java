@@ -1,7 +1,7 @@
-package Player;
+package player;
 
-import Entity.Entity;
-import Entity.Player;
+import entity.Entity;
+import entity.Player;
 
 public class Swordsman extends Player {
     public Swordsman(String name, int health) {

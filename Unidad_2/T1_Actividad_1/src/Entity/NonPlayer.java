@@ -1,6 +1,6 @@
-package Entity;
+package entity;
 
-import Interfaces.SharedBehavior;
+import interfaces.SharedBehavior;
 
 public class NonPlayer extends Entity implements SharedBehavior {
     public NonPlayer(String name, int health) {

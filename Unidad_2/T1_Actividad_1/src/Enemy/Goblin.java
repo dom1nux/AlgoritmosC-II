@@ -1,7 +1,7 @@
-package Enemy;
+package enemy;
 
-import Entity.Entity;
-import Entity.Enemy;
+import entity.Enemy;
+import entity.Entity;
 
 public class Goblin extends Enemy {
     public Goblin(String name, int health) {

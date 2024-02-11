@@ -1,7 +1,7 @@
-package Player;
+package player;
 
-import Entity.Entity;
-import Entity.Player;
+import entity.Entity;
+import entity.Player;
 
 public class Wizard extends Player {
     public Wizard(String name, int health) {
@@ -12,6 +12,6 @@ public class Wizard extends Player {
     public void attack(Entity target) {
         super.attack(target);
         int damage = 30;
-        System.out.printf(name + "hace %d de daño\n", damage);
+        System.out.printf("%s hace %d de daño\n", name, damage);
     }
 }
