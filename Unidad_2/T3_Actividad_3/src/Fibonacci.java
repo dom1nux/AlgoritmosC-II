@@ -12,7 +12,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Fibonacci fibonacci = new Fibonacci();
-        System.out.println("Ingrese \"n\": ");
+        System.out.print("Ingrese \"n\": ");
         int num = scanner.nextInt();
         int result = fibonacci.n_fibonacci(num);
         System.out.printf("El numero fibonacci \"%d\" es %d", num, result);

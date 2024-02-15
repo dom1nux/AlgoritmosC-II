@@ -8,7 +8,7 @@ public class DigitCounter {
     }
 
     public static void main(String[] args) {
-        DigitCounter dCounter = new DigitCounter();
-        System.out.println(dCounter.digitCounter(5874));
+        DigitCounter counter = new DigitCounter();
+        System.out.println(counter.digitCounter(5874));
     }
 }
