@@ -1,31 +1,34 @@
 import java.util.Random;
 
 public class CardShuffler {
+    // Deck: Mazo de cartas
+    // Card: Carta
+    public static void shuffleDeck(int[] deck) {
+        Random rand = new Random();
+
+        for (int i = deck.length - 1; i > 0; i--) {
+            int j = rand.nextInt(i + 1);
+            int temp = deck[i];
+            deck[i] = deck[j];
+            deck[j] = temp;
+        }
+    }
+
     public static void main(String[] args) {
-        int[] mazo = new int[52];
+        int[] deck = new int[52];
         int counter = 1;
         for (int i = 0; i < 52; i++) {
-            mazo[i] = counter;
+            deck[i] = counter;
             counter++;
-
+            
             if (counter > 13) {
                 counter = 1;
             }
         }
-        deckShuffler(mazo);
+        shuffleDeck(deck);
         System.out.println("Mazo barajado:");
-        for (int carta : mazo) {
-            System.out.print(carta + " ");
-        }
-    }
-    public static void deckShuffler(int[] mazo) {
-        Random rand = new Random();
-
-        for (int i = mazo.length - 1; i > 0; i--) {
-            int j = rand.nextInt(i + 1);
-            int temp = mazo[i];
-            mazo[i] = mazo[j];
-            mazo[j] = temp;
+        for (int card : deck) {
+            System.out.print(card + " ");
         }
     }
 }
