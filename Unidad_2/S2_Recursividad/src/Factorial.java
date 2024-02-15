@@ -11,6 +11,6 @@ public class Factorial {
 
     public static void main(String[] args) {
         Factorial fac = new Factorial();
-        System.out.println(fac.factorial(5));
+        System.out.printf("Resultado: %d", fac.factorial(5));
     }
 }

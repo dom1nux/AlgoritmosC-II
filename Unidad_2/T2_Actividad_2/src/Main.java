@@ -4,13 +4,13 @@ public class Main {
         int height = 5;
         int[][] matrixOne = new int[length][height];
         int[][] matrixTwo = new int[length][height];
-        Matrix.matrixFill(matrixOne);
-        Matrix.matrixPrint(matrixOne);
+        MatrixOperations.matrixFill(matrixOne);
+        MatrixOperations.matrixPrint(matrixOne);
         System.out.println();
-        Matrix.matrixFill(matrixTwo);
-        Matrix.matrixPrint(matrixTwo);
+        MatrixOperations.matrixFill(matrixTwo);
+        MatrixOperations.matrixPrint(matrixTwo);
         System.out.println();
-        int[][] matrixOut = Matrix.matrixSum(matrixOne, matrixTwo);
-        Matrix.matrixPrint(matrixOut);
+        int[][] matrixOut = MatrixOperations.matrixSum(matrixOne, matrixTwo);
+        MatrixOperations.matrixPrint(matrixOut);
     }
 }

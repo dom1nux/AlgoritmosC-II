@@ -1,34 +1,44 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int length = 5;
-        int height = 5;
-        int[][] matrixOne = new int[length][height];
-        int[][] matrixTwo = new int[length][height];
-        for (int i = 0; i < matrixOne.length; i++) {
-            for (int j = 0; j < matrixOne[i].length; j++) {
-                matrixOne[i][j] = (int) (Math.random() * 10);
-                System.out.print(matrixOne[i][j] + " ");
+        MatrixOperations operations = new MatrixOperations();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese el número de filas: ");
+        int rows = scanner.nextInt();
+
+        System.out.print("Ingrese el número de columnas: ");
+        int columns = scanner.nextInt();
+
+        int[][] matrixOne = new int[rows][columns];
+        int[][] matrixTwo = new int[rows][columns];
+
+        System.out.println("Ingrese los elementos de la matriz 1:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrixOne[i][j] = scanner.nextInt();
             }
-            System.out.println();
-        }
-        System.out.println();
-        for (int i = 0; i < matrixTwo.length; i++) {
-            for (int j = 0; j < matrixTwo[i].length; j++) {
-                matrixTwo[i][j] = (int) (Math.random() * 10);
-                System.out.print(matrixTwo[i][j]+ " ");
-            }
-            System.out.println();
         }
 
-        System.out.println();
-        
-        int[][] matrixOut = TheMatrix.matrixSum(matrixOne, matrixTwo);
-        for (int i = 0; i < matrixOut.length; i++) {
-            for (int j = 0; j < matrixOut[i].length; j++) {
-                System.out.print(matrixOut[i][j] + " ");
+        System.out.println("Ingrese los elementos de la matriz 2:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrixTwo[i][j] = scanner.nextInt();
             }
-            System.out.println();
         }
 
+        scanner.close();
+
+        int[][] sumMatrix = operations.add(matrixOne, matrixTwo);
+        int[][] productMatrix = operations.multiply(matrixOne, matrixTwo);
+        int[][] transposeMatrix = operations.transpose(matrixOne);
+
+        System.out.println("Suma de matrices:");
+        operations.print(sumMatrix);
+        System.out.println("Producto de matrices:");
+        operations.print(productMatrix);
+        System.out.println("Transpuesta de la matriz:");
+        operations.print(transposeMatrix);
     }
 }

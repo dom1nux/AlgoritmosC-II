@@ -35,11 +35,12 @@ public class MatrixProduct {
             }
             System.out.println();
         }
+        scanner.close();
         if (matrixOne[0].length != matrixTwo.length) {
             System.out.println("Error: Las matrices no pueden ser multiplicadas.");
             return;
         }
-
+        
         int[][] matrixOut = new int[matrixOne.length][matrixTwo[0].length];
         for (int i = 0; i < matrixOne.length; i++) {
             for (int j = 0; j < matrixTwo[0].length; j++) {
@@ -55,6 +56,5 @@ public class MatrixProduct {
             }
             System.out.println();
         }
-        scanner.close();
     }
 }
